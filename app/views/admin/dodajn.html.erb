@@ -1,0 +1,14 @@
+<%=form_for :message , url: {action: "utworzn"}, html: {multipart: true} do |f| %>
+    <table class="table table-hover">
+      <tr><td> Temat: </td><td> <%=f.text_area :topic%> </td></tr>
+      <tr><td> Treść: </td><td> <%=f.text_area :content%> </td></tr>
+      <tr><td> Zdjęcie: </td><td> <%=f.file_field :avatar%> </td></tr>
+
+      <td><%= f.submit "Dodaj", class:"btn btn-primary btn-lg" %>    </td>
+
+      <td><%=link_to 'Anuluj', {action:'flash2'}, class:'btn btn-primary btn-lg'%> </td>
+
+
+    </table>
+
+<%end%>

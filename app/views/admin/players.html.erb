@@ -1,0 +1,9 @@
+<%@players.each do |w|%>
+
+    <p style="margin: 10px; text-align: center;  "> <%= w.name %> </p> <br>
+    <%= link_to "Usuń", {id: w.id , action: 'usunp'}, data:{confirm: 'jestes pewien?'}  %>
+
+
+
+
+<%end%>

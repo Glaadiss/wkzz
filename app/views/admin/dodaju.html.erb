@@ -1,0 +1,22 @@
+<%=form_for :userteam , url: {action: "utworzu"}, html: {multipart: true} do |f| %>
+    <table class="table table-hover">
+
+
+      <tr>
+        <td> Drużyna</td>
+        <td><%= f.select :team_id, Team.all.map{|k|[ k.name, k.id]},  {prompt: "Wybierz"}, class: 'form-control' %></td>
+      </tr>
+
+      <tr>
+        <td> Gracz</td>
+        <td><%= f.select :player_id, Player.all.map{|k|[ k.name, k.id]},  {prompt: "Wybierz"}, class: 'form-control' %></td>
+      </tr>
+
+      <td><%= f.submit "Dodaj", class:"btn btn-primary btn-lg" %>    </td>
+
+      <td><%=link_to 'Anuluj', {action:'flash2'}, class:'btn btn-primary btn-lg'%> </td>
+
+
+    </table>
+
+<%end%>

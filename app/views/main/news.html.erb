@@ -1,0 +1,10 @@
+<div id="pole">
+
+  <h5> <div id="pole"> <p> <%=@message.created_at%> </p></div></h5>
+
+ <h2> <div id="pole"> <p> <%=@message.topic%> </p></div></h2>
+
+  <h4><div id="pole"> <p> <%=@message.content%>  </p></div> </h4>
+  <div id="pole">  <%=image_tag @message.avatar.url(:medium)%> </div>
+
+  </div>

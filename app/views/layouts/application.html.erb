@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wkz</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body >
+<style type="text/css">
+    body { background: linear-gradient(to right, white ,red ); }
+</style>
+
+<% if flash[:dodano] %>
+    <div class="alert alert-success" >  <%=flash[:dodano] %> </div>
+
+<%end%>
+
+<% if flash[:anulowano] %>
+    <div class="alert alert-danger" >  <%=flash[:anulowano] %> </div>
+
+<%end%>
+
+<% if notice %>
+    <div class="alert alert-success" >  <%=notice %> </div>
+
+<%end%>
+
+<% if alert %>
+    <div class="alert alert-danger" >  <%=alert %> </div>
+
+<%end%>
+<div id="tlo">
+
+<div id="naglowek">
+<table class="table"  >
+
+
+  <tr >
+<td ></td>
+  <td><%=link_to  "Home",{ controller: 'main', action:'home'}, class:'btn btn-primary' %></td>
+  <td><%=link_to  "Teams",{  controller: 'main', action:'teams'}, class:'btn btn-primary' %></td>
+  <td><%=link_to  "About",{  controller: 'main', action:'about'}, class:'btn btn-primary' %></td>
+  <td><%=link_to  "Contact",{  controller: 'main', action:'contact'}, class:'btn btn-primary' %></td>
+
+
+<td>
+  <a href='https://www.youtube.com/channel/UCNMXAfcxsypP88dVbPlcr8Q'> <%=image_tag("YouTube.png", :border => 0, width: 50, height: 50)%>  </a>
+  <a href='https://www.youtube.com/channel/UCNMXAfcxsypP88dVbPlcr8Q'> <%=image_tag("facebook.png", :border => 0, width: 50, height: 50)%>  </a>
+  <a href='https://www.youtube.com/channel/UCNMXAfcxsypP88dVbPlcr8Q'> <%=image_tag("twitch.png", :border => 0, width: 50, height: 50)%>  </a>
+  <a href='https://www.youtube.com/channel/UCNMXAfcxsypP88dVbPlcr8Q'> <%=image_tag("twitter.png", :border => 0, width: 50, height: 50)%>  </a>
+</td>
+  </tr>
+
+
+</table>
+
+
+</div>
+  <div id="tekst">
+
+
+
+  <h2>
+  <font color="red">
+
+<%= yield %>
+
+
+
+</font>
+</h2>
+</div>
+  <div id="stopka"> <p style="margin-left: 80%; margin-top:  25px;" >
+    <%=link_to  "A",{controller: 'admin',  action:'adminpanel'}, class:'btn btn-primary' %>
+  </p></div>
+</div>
+</body>
+</html>

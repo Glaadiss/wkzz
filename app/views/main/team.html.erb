@@ -1,0 +1,10 @@
+<%@relacje.each do |w|%>
+
+    <div id="pole">
+   <div id="pole"><p style="margin: 10px; text-align: center;  "> <%= w.name %> </p> </div>
+      <%=link_to (image_tag w.avatar.url(:thumb)),{id: w.id, action: 'team' }%>
+
+
+    </div>
+
+<%end%>

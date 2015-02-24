@@ -1,0 +1,27 @@
+
+
+<div id="pole">
+<h1> RECENT NEWS </h1>
+
+</div>
+
+
+<% @news.each do |w| %>
+
+
+
+<div id="pole">
+  <table>
+
+
+    <tr><td rowspan="4"><%=link_to (image_tag w.avatar.url(:medium)),{id: w.id, action: 'news' }  %></td>
+      <td><h5><p> <%= w.created_at %>            </p></h5> </td></tr>
+    <tr><td rowspan="3"><h2><p> <%=link_to w.topic, {id: w.id, action: 'news' } %> </p></h2></td></tr>
+
+
+
+  </table>
+</div>
+
+
+<%end%>

@@ -1,0 +1,21 @@
+<%=form_for :player , url: {action: "utworzp"}, html: {multipart: true} do |f| %>
+    <table class="table table-hover">
+      <tr><td> Imie:</td><td> <%=f.text_field :name%> </td></tr>
+      <tr><td> Nazwisko:</td><td> <%=f.text_field :surname%> </td></tr>
+
+      <tr><td> Kraj:</td><td> <%=f.text_field :country%> </td></tr>
+      <tr><td> Miasto:</td><td> <%=f.text_field :city%> </td></tr>
+      <tr><td> Wiek:</td><td> <%=f.text_field :age%> </td></tr>
+      <tr><td> Avatar:</td><td> <%=f.file_field :avatar%> </td></tr>
+      <tr><td> Informacje:</td><td> <%=f.text_area :name%> </td></tr>
+
+
+
+      <td><%= f.submit "Dodaj", class:"btn btn-primary btn-lg" %>    </td>
+
+      <td><%=link_to 'Anuluj', {action:'flash2'}, class:'btn btn-primary btn-lg'%> </td>
+
+
+    </table>
+
+<%end%>

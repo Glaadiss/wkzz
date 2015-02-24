@@ -1,0 +1,9 @@
+<%@news.each do |w|%>
+
+    <p style="margin: 10px; text-align: center;  "> <%= w.topic %> </p> <br>
+    <%= link_to "Usuń", {id: w.id , action: 'usunn'}, data:{confirm: 'jestes pewien?'}  %>
+
+
+
+
+<%end%>
