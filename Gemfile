@@ -48,3 +48,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'paperclip', '~> 4.2.1'
 gem 'devise'
 gem 'devise-i18n'
+
+gem 'coffee-script-source', '1.8.0'
