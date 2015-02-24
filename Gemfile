@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 ruby '2.0.0'
 
+
 group :assets do
   gem 'sass-rails', '~> 4.0.3'
   gem 'coffee-rails', '~> 4.0.0'
@@ -63,6 +64,6 @@ gem 'paperclip', '~> 4.2.1'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'devise'
-gem 'devise-i18n'
+
 
 gem 'coffee-script-source', '1.8.0'

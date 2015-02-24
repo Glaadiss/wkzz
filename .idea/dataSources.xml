@@ -10,7 +10,7 @@
     <data-source source="LOCAL" name="Rails wkz: production" uuid="26d2442f-bfa3-43ce-afb0-37e61bdb4b66">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:my_database_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql:db/production.postgresql</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails wkz: test" uuid="aa543e40-ffe0-485b-bcb5-d68707bb45f4">
