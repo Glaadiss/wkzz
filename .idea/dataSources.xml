@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3454422965">
+  <component name="DataSourceManagerImpl" format="xml" hash="2725985491">
     <data-source source="LOCAL" name="Rails wkz: development" uuid="fb2cfca1-72dc-46da-9cd6-fd4a5988f635">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\Bartek\RubymineProjects\wkz\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails wkz: production" uuid="26d2442f-bfa3-43ce-afb0-37e61bdb4b66">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:my_database_production</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails wkz: test" uuid="aa543e40-ffe0-485b-bcb5-d68707bb45f4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bartek\RubymineProjects\wkz\db\test.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>

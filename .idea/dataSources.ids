@@ -3,4 +3,10 @@
   <data-source source="LOCAL" name="Rails wkz: development" uuid="fb2cfca1-72dc-46da-9cd6-fd4a5988f635">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails wkz: production" uuid="26d2442f-bfa3-43ce-afb0-37e61bdb4b66">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails wkz: test" uuid="aa543e40-ffe0-485b-bcb5-d68707bb45f4">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
