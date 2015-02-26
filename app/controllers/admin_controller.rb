@@ -78,7 +78,7 @@ class AdminController < ApplicationController
 
 
   def utworzp
-    @nowyp= Player.new(parametryp)
+    @nowyp = Player.new(parametryp)
     if @nowyp.save
       redirect_to(:action => 'flash1' )
     else
