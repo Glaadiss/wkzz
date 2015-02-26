@@ -25,3 +25,7 @@ production:
   database: d49ftlt4ak8f34
   pool: 5
   timeout: 5000
+  user: njcmizsxupzkva
+  password: byG9Jvri295Z7AiB5vqDzRJdHw
+  port: 5432
+  host: ec2-54-246-100-49.eu-west-1.compute.amazonaws.com

@@ -10,7 +10,8 @@
     <data-source source="LOCAL" name="Rails wkz: production" uuid="26d2442f-bfa3-43ce-afb0-37e61bdb4b66">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:d49ftlt4ak8f34</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-246-100-49.eu-west-1.compute.amazonaws.com:5432/d49ftlt4ak8f34</jdbc-url>
+      <user-password>dfc8dfd3dfeddf93dfe0dfdcdfd8dfc3df98df93df9fdff0df9ddfebdfc3dfe8df9fdfdcdfdbdfeedfd0dff8dfe0dfcedfe2dfdd</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails wkz: test" uuid="aa543e40-ffe0-485b-bcb5-d68707bb45f4">
